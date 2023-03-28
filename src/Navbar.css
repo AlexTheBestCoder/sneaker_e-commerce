@@ -7,15 +7,17 @@
     display: flex;
     height: 14%;
     width: 100%;
-    border-bottom: 1px solid black;
+    border: 1px solid black;
     justify-content: space-between;
 }
 
 .navbar-container-left {
     display: flex;
+    position: relative;
+    left: 10%;
     justify-content: space-between;
-    /* border: 1px solid black; */
-    width: 38rem;
+    border: 1px solid black;
+    width: 50rem;
 }
 
 .lien {
@@ -25,30 +27,47 @@
     font-weight: 500;
     color: rgb(142, 142, 142);
     justify-content: space-around;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 70%;
 }
 
 .navbar-container-rigth {
     display: flex;
-    width: 5rem;
+    height: 100%;
+    position: relative;
+    right: 10%;
+    width: 5.2rem;
     justify-content: space-between;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 .navbar-container-rigth img {
     height: 50px;
 }
 
+@media screen and (max-width: 1300px) {
+    .navbar-container-left {
+        width: 38rem;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .navbar {
+       width: 200px;
+        border: 1px solid black;
         height: 5%;
         border-bottom: none;
     }
     .navbar-container-left {
+        position: relative;
+        left: 0;
         /* border: 1px solid black; */
         width: 10rem;
         /* justify-content: space-around; */
+    }
+    .navbar-container-rigth {
+        position: relative;
+        right: 0;
     }
     .navbar-container-left .lien {
         width: 5rem;
