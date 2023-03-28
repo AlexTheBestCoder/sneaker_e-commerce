@@ -1,0 +1,285 @@
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 87%;
+    width: 92%;
+    /* padding: 80px 80px; */
+    /* border: 1px solid red; */
+}
+.main-container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: flex-start;
+    width: 50%;
+    /* border: 1px solid blue; */
+}
+
+.all-sneaker {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    height: 85%;
+    /* width: 90%; */
+    /* border: 5px solid violet; */
+}
+.sneaker-image-primary {
+    display: flex;
+    height: 80%;
+    width: 100%;
+    /* border: 5px solid black; */
+}
+.sneaker-image-primary img {
+    height: 100%;
+    width: auto;
+}
+.sneaker img {
+    /* height: 100%; */
+    /* width: 100%; */
+}
+.sneaker-image-secondary {
+    display: flex;
+    justify-content: space-between;
+    height: 17%;
+    width: 100%;
+    /* border: 5px solid black; */
+}
+.sneaker-image-secondary img {
+    height: 100%;
+}
+.main-container-left img {
+    border-radius: 10px;
+}
+.main-container-rigth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-right: 8rem; */
+    height: 100%;
+    width: 50%;
+    /* border: 5px solid black; */
+}
+.all-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 58%;
+    width: 80%;
+    /* border: 5px solid yellow; */
+}
+.main-container-rigth .text {
+    height: 60%;
+    /* border: 1px solid black; */
+    width: 100%;
+}
+.main-container-rigth .text p {
+    /* width: 80%; */
+}
+.main-container-rigth h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.main-container-rigth h2 {
+    color: orange;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+h1 span {
+    position: relative;
+    bottom: 18px;
+}
+.main-container-rigth .price {
+    /* display: flex;
+    flex-direction: column; */
+    /* border: 3px solid black; */
+    height: 20%;
+    /* border: 5px solid black; */
+}
+.total {
+    display: flex;
+    width: 10rem;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    align-items: center;
+}
+.reduction {
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: bisque;
+    font-weight: bold;
+    color: orange;
+    width: 40px;
+    /* margin-left: 40px; */
+}
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+}
+.my-button {
+    display: flex;
+    align-items: center;
+    height: 20%;
+    /* border: 5px soli d black; */
+    width: 100%;
+    justify-content: space-between;
+}
+.button-plus-and-moins {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.089);
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+    border-radius: 6px;
+    height: 70%;
+    width: 35%;
+}
+.button-plus-and-moins button {
+    color: orange;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.total-value {
+    font-size: 25px;
+    font-weight: bold;
+}
+.button-add {
+    height: 70%;
+    font-weight: bold;
+    background-color: rgb(255, 121, 31);
+    border-radius: 6px;
+    width: 62%;
+}
+.button-add button {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.button-add button svg {
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width: 1530px){
+    .main-content {
+        justify-content: space-between;
+    }
+    .main-container-left .all-sneaker {
+        height: 70%;
+    }
+    .main-container-rigth {
+        /* align-items: end; */
+        width: 50%;
+    }
+    .main-container-rigth .all-detail {
+        width: 90%;
+    }
+   
+}
+@media screen and (max-width: 1240px){
+    .main-container-left .all-sneaker {
+        height: 60%;
+    }
+    .main-container-rigth {
+        align-items: end;
+    }
+    .main-container-rigth .all-detail {
+     width: 95%;
+    }
+ }
+ @media screen and (max-width: 1077px){
+    .main-container-left .all-sneaker {
+        position: relative;
+        right: 5%;
+        height: 60%;
+    }
+    .main-container-rigth .all-detail {
+        position: relative;
+        left: 5%;
+     width: 23rem;
+    }
+ }
+
+ @media screen and (max-width: 1000px){
+    .main-content {
+        height: 94%;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .main-container-left {
+        align-items: center;
+        height: 47%;
+        width: 100%;
+    }
+    .main-container-left .all-sneaker {
+        /* width: 100%; */
+        position: relative;
+        right: 0;
+        height: 100%;
+    }
+    .main-container-left .sneaker-image-primary {
+        height: 100%;
+        /* border: none; */
+    }
+    .main-container-left .sneaker-image-secondary {
+        display: none;
+    }
+    .main-container-rigth {
+        align-items: center;
+        height: 60%;
+        width: 100%;
+    }
+    .main-container-rigth .all-detail {
+        height: 100%;
+        width: 24.2rem;
+        position: relative;
+        left: 0;
+    }
+ }
+
+ @media screen and (max-width: 600px) {
+    .main-container-rigth .all-detail {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+    }
+    .main-container-rigth .all-detail h1 {
+        font-size: 35px;
+    }
+    .main-container-rigth .text {
+        height: 50%;
+    }
+    .main-container-rigth .all-detail p {
+        position: relative;
+        bottom: 10%;
+    }
+    .price {
+        /* border: 5px solid black; */
+        align-items: center;
+        height: 5%;
+        justify-content: space-between;
+        display: flex;
+    }
+    .my-button {
+        height: 28%;
+        /* width: 90%; */
+        /* border: 1px solid black; */
+        flex-direction: column;
+    }
+    .my-button .button-add {
+        width: 100%;
+        height: 45%;
+    }
+    .my-button .button-plus-and-moins {
+        width: 100%;
+        height: 45%;
+    }
+ }
