@@ -8,7 +8,7 @@
     height: 87%;
     width: 92%;
     /* padding: 80px 80px; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .main-container-left {
     display: flex;
@@ -183,6 +183,7 @@ h1 span {
         width: 50%;
     }
     .main-container-rigth .all-detail {
+        /* height: 100%; */
         width: 90%;
     }
    
@@ -223,7 +224,7 @@ h1 span {
         border: 1px solid black;
         justify-content: center;
         align-items: center;
-        height: 47%;
+        height: 45%;
         width: 100%;
     }
     .main-container-left .all-sneaker {
@@ -243,19 +244,20 @@ h1 span {
     }
     .main-container-rigth {
         align-items: center;
-        height: 60%;
+        height: 70%;
         width: 100%;
     }
     .main-container-rigth .all-detail {
         height: 100%;
         width: 24.2rem;
+        border: 1px solid black;
         position: relative;
         left: 0;
     }
  }
  .main-container-rigth .all-detail p {
-    position: relative;
-    bottom: 10%;
+    /* position: relative;
+    bottom: 10%; */
 }
 
  @media screen and (max-width: 600px) {
@@ -268,10 +270,16 @@ h1 span {
         font-size: 35px;
     }
     .main-container-rigth .text {
+
         height: 50%;
     }
-    
+    .main-container-rigth .paragraphe {
+        position: relative;
+        bottom: 8%;
+    }
     .price {
+        position: relative;
+        top: 6%;
         /* border: 5px solid black; */
         align-items: center;
         height: 5%;

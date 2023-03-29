@@ -37,7 +37,7 @@ export default function CardMain() {
             Fall Limited Edition <br />
             <span>Sneakers</span>
           </h1>
-          <p>
+          <p className="paragraphe">
             These low-profile sneakers are your perfect casual wear companion.
             Featuring a durable rubber outer sole, they’ll withstand everything
             the weather can offer.
