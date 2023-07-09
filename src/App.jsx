@@ -8,7 +8,7 @@ function App() {
   const { isDarkMode } = useContext(ThemeContext);
   
   return (
-    <div className={`App `}>
+    <div className={`App ${isDarkMode ? "dark" : "light"}`}>
      <Home />
     </div>
   );
